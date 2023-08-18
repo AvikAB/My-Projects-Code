@@ -99,7 +99,7 @@ int main() {
     
     vector<Question> questions = {
         Question("What is the capital of Bangladesh?", {"Rajshahi", "Dhaka", "Sylhet", "Rangpur"}, 1),
-        Question("Which sign is known as Terminator in C and C++ code?", {":", "/", "|", ";"}, 4),
+        Question("Which sign is known as Terminator in C and C++ code?", {":", "/", "|", ";"}, 3),
         Question("What is the largest mammal?", {"Elephant", "Blue Whale", "Giraffe", "Hippopotamus"}, 1),
         Question("What gas do plants use for photosynthesis?", {"Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"}, 1),
         Question("What is the largest organ in the human body?", {"Heart", "Lungs", "Skin", "Liver"}, 2)
