@@ -60,10 +60,11 @@ public:
         userAnswers.push_back(chosenOption - 1);
 
         if (questions[i].isAnswerCorrect(chosenOption - 1)) {
-            cout << "Correct!\n";
+
+            cout << "\033[38;2;0;128;0m" << "Correct!" << "\033[0m" << endl;
             score++;
         } else {
-            cout << "Incorrect!\n";
+            cout << "\033[31m" << "Incorrect!" << "\033[0m" << endl;
         }
     } else {
         cout << "Invalid choice. Take the right choice.\n";
@@ -96,7 +97,7 @@ public:
 int main() {
 
     cout << "Welcome to QuizCraft!\n";
-    
+
     vector<Question> questions = {
         Question("What is the capital of Bangladesh?", {"Rajshahi", "Dhaka", "Sylhet", "Rangpur"}, 1),
         Question("Which sign is known as Terminator in C and C++ code?", {":", "/", "|", ";"}, 3),
@@ -117,6 +118,6 @@ int main() {
 
     Student student(studentName, studentID);
     student.takeQuiz(questions);
-    
+
     cout << "\nThank You For Participate!" << endl;
 }
